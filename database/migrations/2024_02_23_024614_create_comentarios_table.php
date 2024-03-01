@@ -19,7 +19,7 @@ class CreateComentariosTable extends Migration
             $table->integer('nota');
             $table->timestamps();
 
-             $table->foreign('imovel_id')->references('id')->on('imoveis')->onDelete('cascade');
+            $table->foreign('imovel_id')->references('id')->on('imoveis')->onDelete('cascade');
             $table->foreign('usuario_id')->references('id')->on('usuarios')->onDelete('cascade');
         });
     }

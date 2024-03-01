@@ -16,7 +16,7 @@ class CreateImoveisTable extends Migration
             $table->string('titulo');
             $table->string('foto')->nullable();
             $table->text('descricao');
-            $table->decimal('valor_aluguel', 10, 2);
+            $table->decimal('valor_aluguel', 10, 2)->default(0.00);
             $table->string('endereco');
             $table->timestamps();
         });
